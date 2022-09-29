@@ -323,6 +323,21 @@
         </svg></a></li>
       </ul>
     </div>
+    <!--ПРИЄДНУЙТЕСЬ-->
+    <div class="send-group">
+      <p class="title-form">Підпишіться на розсилку</p>
+      <form class="form-foot">
+        <label class="label-mail-foot">
+          <input class="imp-mail-foot" type="email" name="email" placeholder="E-mail" required >
+        </label>
+          <button class="btn-submit" type="submit">
+             Підписатися 
+            <svg class="icon-send" width="24" height="24">
+              <use href="./images/icons.svg#send"></use>
+            </svg>
+          </button>           
+      </form>
+    </div>
    </div>
     </footer>
     <!--МОДАЛЬНЕ ВІКНО-->
@@ -333,6 +348,52 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <form class="form-modal">
+         <p class="title-modal-form">Залиште свої дані, ми вам передзвонимо</p>
+          <label class="label-name form-lbl-cont">
+           <svg class="icon-form-cont" width="18" height="18">
+            <use href="./images/icons.svg#person"></use>
+           </svg>
+          <span class="name-lbl-modal">Ім'я</span>
+          <input type="text" name="name" required>  
+         </label>
+
+         <label class="label-tel form-lbl-cont">
+            <svg class="icon-form-cont" width="18" height="18">
+             <use href="./images/icons.svg#phone-f"></use>
+            </svg>
+           <span class="name-lbl-modal">Телефон</span>
+           <input type="tel" name="phone" required>  
+         </label>
+
+         <label class="label-mail-form form-lbl-cont">
+            <svg class="icon-form-cont" width="18" height="18">
+             <use href="./images/icons.svg#email-f"></use>
+            </svg>
+           <span class="name-lbl-modal">Пошта</span>
+           <input type="email" name="email" required>  
+         </label>
+
+         <label class="label-coment">
+           <span class="name-lbl-modal">Кометар</span>
+           <textarea class="feedback-form" name="feedback" placeholder="Введіть текст"></textarea>
+         </label>
+
+         <label class="label-checkbox">
+         <input class="checkbox" type="checkbox" name="privacy policy" value="privacy policy" required>
+         <svg class="icon-check" width="16" height="15">
+          <use href="./images/icons.svg#check"></use>
+         </svg>
+         <span class="icon-checkbox"></span>
+         <span class="policy-text">
+          Погоджуюся з розсилкою та приймаю 
+          <a class="policy" href target="_blank" rel="noopener noreferrer">
+            Умови договору
+          </a>
+         </span>
+         </label>
+         <button class="btn-modal" type="submit">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
